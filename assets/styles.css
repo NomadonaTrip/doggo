@@ -10,7 +10,7 @@
 }
 
 :root {
-  --main-color: #a2c0be;
+  --main-color: #a4a2c0;
   --link-color: #bfd3d2;
   --black-color: #000000;
   --white-color: #ffffff;
@@ -307,6 +307,8 @@ header .container .right ul li a:hover {
   width: 100%;
   display: flex;
   margin-top: 4rem;
+  background-color: var(--main-color);
+  padding: 5%;
 }
 #our-trainers .container {
   width: 60%;
@@ -327,7 +329,7 @@ header .container .right ul li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0rem;
+  margin-bottom: 2rem;
   width: 50%;
 }
 #our-trainers .ourtrainers-text h2 {
@@ -365,4 +367,131 @@ header .container .right ul li a:hover {
 }
 .trainer-description {
   width: 90%;
+}
+
+/* pricing table */
+
+#pricing-table {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+}
+#pricing-table .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pricing-table .container .paws {
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+#pricing-table .container .paws #big-paw {
+  size: 5rem;
+  color: var(--main-color);
+}
+#pricing-table .pricing-text,
+.pricing-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#pricing-table .pricing-text h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#pricing-table .pricing-text h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.pricing-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+  /* margin: 0% 1%; */
+  background-color: var(--main-color);
+  /* padding: 2%; */
+}
+
+.pricing-description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 5%;
+}
+.pricing-description > * {
+  text-align: center;
+  line-height: 2.4;
+}
+.pricing-profile .dark {
+  background-color: #1d1d24;
+}
+.pricing-profile .dark button {
+  background-color: var(--main-color);
+}
+
+.pricing-description h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.pricing-description h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.pricing-description h2 > span {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.pricing-description button {
+  background-color: #1d1d24;
+  border: none;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 5rem;
+  color: white;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+
+@media screen and (max-width: 1280px) {
+  #hero .container {
+    width: 80%;
+  }
+
+  #welcome .container {
+    width: 90%;
+  }
+
+  #benefits .container {
+    width: 90%;
+  }
+
+  #about-us .container {
+    width: 90%;
+  }
+
+  #our-trainers .container {
+    width: 90%;
+  }
 }
