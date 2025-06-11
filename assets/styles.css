@@ -58,6 +58,9 @@ header .container .left a {
 header .container .left a:active {
   color: var(--main-color);
 }
+header .container .left .active {
+  color: blue;
+}
 header .container .left a:hover {
   color: var(--main-color);
 }
@@ -323,7 +326,7 @@ header .container .right ul li a:hover {
 }
 #our-trainers .container .paws #big-paw {
   size: 5rem;
-  color: var(--main-color);
+  color: white;
 }
 #our-trainers .ourtrainers-text {
   display: flex;
@@ -472,6 +475,77 @@ header .container .right ul li a:hover {
   font-size: 1rem;
 }
 
+/* Frequently Asked Questions */
+
+/* pricing table */
+
+#FAQ {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+}
+#FAQ .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#FAQ .container .paws {
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+#FAQ .container .paws #big-paw {
+  size: 5rem;
+  color: var(--main-color);
+}
+#FAQ .FAQ-text,
+.FAQ-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#FAQ .FAQ-text h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#FAQ .FAQ-text h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.FAQ-info {
+  display: flex;
+  align-items: center;
+}
+.FAQ-lists {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.FAQ-lists ul {
+  line-height: 2.6rem;
+}
+.FAQ-lists h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.FAQ-img img {
+  width: 32rem;
+  height: 18rem;
+  object-fit: cover;
+}
+
+.FAQ-img img:hover {
+  box-shadow: 10px 10px var(--main-color);
+}
+
 /* Mobile responsiveness */
 
 @media screen and (max-width: 1280px) {
@@ -492,6 +566,10 @@ header .container .right ul li a:hover {
   }
 
   #our-trainers .container {
+    width: 90%;
+  }
+
+  #pricing-table {
     width: 90%;
   }
 }
