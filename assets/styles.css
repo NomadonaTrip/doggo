@@ -11,6 +11,7 @@
 
 :root {
   --main-color: #a4a2c0;
+  --dark-color: #1d1d24;
   --link-color: #bfd3d2;
   --black-color: #000000;
   --white-color: #ffffff;
@@ -361,15 +362,16 @@ header .container .right ul li a:hover {
   /* padding: 2%; */
 }
 .trainer-img img {
-  width: 24rem;
+  width: 20rem;
   height: 32rem;
   object-fit: cover;
 }
 .trainer-img img:hover {
-  box-shadow: 10px 10px var(--main-color);
+  box-shadow: 10px 10px var(--dark-color);
 }
 .trainer-description {
   width: 90%;
+  margin-top: 1rem;
 }
 
 /* pricing table */
@@ -465,7 +467,7 @@ header .container .right ul li a:hover {
 }
 
 .pricing-description button {
-  background-color: #1d1d24;
+  background-color: var(--dark-color);
   border: none;
   width: 8rem;
   height: 2.5rem;
@@ -546,6 +548,128 @@ header .container .right ul li a:hover {
   box-shadow: 10px 10px var(--main-color);
 }
 
+/* Happy customer reviews */
+
+#happy-customers {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+}
+#happy-customers .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#happy-customers .container .paws {
+  width: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+#happy-customers .container .paws #big-paw {
+  size: 5rem;
+  color: var(--main-color);
+}
+#happy-customers .customers-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#happy-customers .customers-intro h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#happy-customers .review {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.review-text {
+  background-color: var(--main-color);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  padding: 5%;
+  line-height: 2rem;
+  border-radius: 3%;
+  margin-bottom: 5%;
+  height: 16rem;
+  box-shadow: 0.4rem 0.2rem 0.9rem rgba(10, 10, 10, 0.2);
+}
+#happy-customers .customer-reviews {
+  display: flex;
+  justify-content: space-between;
+}
+#happy-customers .customer-reviews img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid var(--main-color);
+}
+
+/* photo gallery */
+
+#photo-gallery {
+  width: 100%;
+  display: flex;
+  margin-top: 4rem;
+}
+#photo-gallery .container {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#photo-gallery .container .paws {
+  width: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+#photo-gallery .container .paws #big-paw {
+  size: 5rem;
+  color: var(--main-color);
+}
+#photo-gallery .photo-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#photo-gallery .photo-intro h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#photo-gallery .photo-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin: 0;
+  padding: 0;
+}
+.photo-grid img:hover {
+  transform: scale(110%);
+  transition: 300ms ease-in-out;
+}
 /* Mobile responsiveness */
 
 @media screen and (max-width: 1280px) {
