@@ -670,6 +670,177 @@ header .container .right ul li a:hover {
   transform: scale(110%);
   transition: 300ms ease-in-out;
 }
+
+/* Doggo Blog */
+
+#doggo-blog {
+  width: 100%;
+  display: flex;
+  margin-top: 15rem;
+}
+#doggo-blog .container {
+  width: 60%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#doggo-blog .container .paws {
+  width: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+#doggo-blog .container .paws #big-paw {
+  size: 5rem;
+  color: var(--main-color);
+}
+#doggo-blog .blog-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#doggo-blog .blog-intro h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#doggo-blog .blog-intro h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  text-align: center;
+  width: 60%;
+  color: var(--main-color);
+}
+.blog-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+.blog-post {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+}
+#doggo-blog .blog-img img {
+  width: 12rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.blog-text h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+.blog-text .blog-date {
+  margin-bottom: 1rem;
+}
+.blog-snippet {
+  margin-bottom: 1rem;
+}
+.blog-text p {
+  color: #5c5c5c;
+}
+.blog-text a {
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+
+/* Our services  */
+
+#our-services {
+  width: 100%;
+  display: flex;
+  margin-top: -12rem;
+}
+#our-services .container {
+  width: 60%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#our-services .container .paws {
+  width: 7%;
+  display: flex;
+  justify-content: space-around;
+}
+#our-services .container .paws #big-paw {
+  size: 5rem;
+  color: var(--main-color);
+}
+#our-services .services-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+#our-services .services-intro h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+#our-services .services-intro h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  text-align: center;
+  width: 60%;
+  color: var(--main-color);
+}
+.services-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+}
+#our-services .service-img img {
+  width: 10rem;
+  height: 12rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.service-text h2 {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+.service-text p {
+  color: #5c5c5c;
+}
+
+/* Contact us */
+
+#contact-us {
+  display: flex;
+  width: 100%;
+  margin-top: 4rem;
+}
+#contact-us .container {
+  width: 60%;
+  height: 60dvh;
+  display: flex;
+  justify-content: center;
+}
+
 /* Mobile responsiveness */
 
 @media screen and (max-width: 1280px) {
