@@ -40,7 +40,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 70%;
+  width: 60%;
 }
 
 header .container .left {
@@ -839,6 +839,163 @@ header .container .right ul li a:hover {
   height: 60dvh;
   display: flex;
   justify-content: center;
+}
+.contact-form {
+  width: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+form {
+  width: 90%;
+}
+.contact-form .form-title {
+  font-size: 1.6rem;
+  color: #41404d;
+}
+.username label {
+  line-height: 3;
+  color: #41404d;
+}
+.username {
+  margin-top: 1.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #41404d;
+}
+.first-name,
+.last-name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.last-name {
+  padding-left: 1%;
+}
+.username input[type="text"] {
+  height: 2rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+}
+.message label {
+  line-height: 3;
+  color: #41404d;
+}
+.message input[type="text"],
+textarea {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+.message textarea {
+  height: 8rem;
+}
+.contact-form ::placeholder {
+  font-size: 1rem;
+  font-family: var(--page-font);
+  padding-left: 0.5rem;
+}
+.contact-form button {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  background-color: #41404d;
+  color: var(--white-color);
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+.contact-message {
+  width: 50%;
+  background-color: #6b6a7e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem;
+  line-height: 1.6;
+}
+.contact-message .paws {
+  color: #41404d;
+  display: flex;
+  justify-content: center;
+}
+.contact-message #big-paw {
+  color: var(--main-color);
+}
+.contact-message h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--white-color);
+}
+.contact-message h3 {
+  color: var(--white-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+.contact-message p {
+  color: #1d1d24;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+/* footer */
+
+#footer {
+  background-color: #41404d;
+}
+#footer .container {
+  width: 60%;
+  padding: 5% 0%;
+  display: flex;
+  flex-direction: column;
+}
+#footer h5 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+#footer p {
+  color: #7c7b91;
+}
+
+.footer-top {
+  display: flex;
+
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.aboutus-footer {
+  width: 30%;
+}
+.follow-us {
+  color: #7c7b91;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+.follow-us .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  margin-top: 4rem;
 }
 
 /* Mobile responsiveness */
