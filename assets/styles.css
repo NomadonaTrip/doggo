@@ -836,7 +836,7 @@ header .container .right ul li a:hover {
 }
 #contact-us .container {
   width: 60%;
-  height: 60dvh;
+  height: 70dvh;
   display: flex;
   justify-content: center;
 }
@@ -1000,7 +1000,7 @@ textarea {
 
 /* Mobile responsiveness */
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 920px) and (max-width: 1280px) {
   #hero .container {
     width: 80%;
   }
@@ -1021,7 +1021,155 @@ textarea {
     width: 90%;
   }
 
-  #pricing-table {
+  #pricing-table .container {
+    width: 80%;
+  }
+  #FAQ .container {
+    width: 80%;
+  }
+  #happy-customers .container {
+    width: 80%;
+  }
+  #doggo-blog .container {
+    width: 80%;
+  }
+  #our-services {
+    margin-top: 2rem;
+  }
+  #our-services .container {
+    width: 80%;
+  }
+  #contact-us {
+    margin-top: 10rem;
+  }
+  #contact-us .container {
+    width: 80%;
+  }
+}
+
+/* large tablets */
+
+@media screen and (min-width: 768px) and (max-width: 919px) {
+  #hero .container {
     width: 90%;
+  }
+
+  #welcome .container {
+    width: 95%;
+  }
+
+  #benefits .container {
+    width: 95%;
+  }
+  .benefit {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+  }
+
+  .benefit .benefit-text {
+    width: 70%;
+    text-align: center;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  #benefits .container .benefit h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  #benefits .container .benefit button {
+    width: 7rem;
+    height: 2.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 1rem;
+    text-transform: capitalize;
+  }
+  #benefits .container .benefit .benefit-img img {
+    height: 24rem;
+    width: 42rem;
+    object-fit: cover;
+    object-position: top;
+  }
+  #benefits .container .benefit .benefit-img img:hover {
+    box-shadow: 10px 10px var(--main-color);
+  }
+
+  /* CSS subsection for benefits with the image on screen-left */
+  .benefit-reverse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .benefit-reverse .benefit-text {
+    width: 80%;
+    text-align: center;
+    margin: 0%;
+    padding-left: 0;
+  }
+
+  #benefits .container .benefit-reverse h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  #benefits .container .benefit-reverse button {
+    width: 7rem;
+    height: 2.3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 1rem;
+    text-transform: capitalize;
+  }
+
+  #benefits .container .benefit-reverse .benefit-img img {
+    height: 24rem;
+    width: 42rem;
+    object-fit: cover;
+    object-position: top;
+    margin: 0%;
+  }
+  /* #benefits .container .benefit-reverse .benefit-img img:hover {
+  box-shadow: 10px 10px var(--main-color);
+} */
+
+  #about-us .container {
+    width: 90%;
+  }
+
+  #our-trainers .container {
+    width: 90%;
+  }
+
+  #pricing-table .container {
+    width: 80%;
+  }
+  #FAQ .container {
+    width: 80%;
+  }
+  #happy-customers .container {
+    width: 80%;
+  }
+  #doggo-blog .container {
+    width: 80%;
+  }
+  #our-services {
+    margin-top: 2rem;
+  }
+  #our-services .container {
+    width: 80%;
+  }
+  #contact-us {
+    margin-top: 10rem;
+  }
+  #contact-us .container {
+    width: 80%;
   }
 }
